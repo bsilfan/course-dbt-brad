@@ -30,7 +30,6 @@ sources:
           Contains information about each user
 
       - name: addresses
-        loaded_at_field: created_at
         description: >
           Contains address information about each address id
 
@@ -45,16 +44,13 @@ sources:
           Contains order level information
 
       - name: order_items
-        loaded_at_field: created_at
         description: >
           Contains order item level information
 
       - name: products
-        loaded_at_field: created_at
         description: >
           Contains product information
           
       - name: promos
-        loaded_at_field: created_at
         description: >
           Contains promo information
