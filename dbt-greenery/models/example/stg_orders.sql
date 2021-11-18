@@ -4,6 +4,14 @@
   )
 }}
 
+with orders_source as (
+
+select * from {{ source('tutorial', 'orders') }}
+
+),
+
+orders_mod as (
+
 SELECT 
     order_id,
     promo_id,
@@ -18,4 +26,8 @@ SELECT
     estimated_delivery_at,
     delivered_at,
     status
-FROM {{ source('tutorial', 'orders') }}
+from orders_source
+
+)
+
+select * from orders_mod

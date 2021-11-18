@@ -4,9 +4,21 @@
   )
 }}
 
-SELECT 
+with products_source as (
+
+select * from {{ source('tutorial', 'products') }}
+
+),
+
+products_mod as (
+
+select 
     product_id,
     name,
     price,
     quantity
-FROM {{ source('tutorial', 'products') }}
+from products_source
+
+)
+
+select * from products_mod

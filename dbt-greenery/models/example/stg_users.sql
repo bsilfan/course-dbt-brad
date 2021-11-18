@@ -4,7 +4,15 @@
   )
 }}
 
-SELECT 
+with users_source as (
+
+select * from {{ source('tutorial', 'users') }}
+
+),
+
+users_mod as (
+
+select 
     user_id,
     first_name,
     last_name,
@@ -13,4 +21,8 @@ SELECT
     created_at,
     updated_at,
     address_id
-FROM {{ source('tutorial', 'users') }}
+from users_source
+
+)
+
+select * from users_mod
