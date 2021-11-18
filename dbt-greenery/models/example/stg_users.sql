@@ -6,7 +6,7 @@
 
 with users_source as (
 
-  select * from {{ source('tutorial', 'users') }}
+select * from {{ source('tutorial', 'users') }}
 
 ),
 

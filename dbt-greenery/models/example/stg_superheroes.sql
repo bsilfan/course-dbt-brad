@@ -4,7 +4,15 @@
   )
 }}
 
-SELECT 
+with superheroes_source as (
+
+select * from {{ source('tutorial', 'superheroes') }}
+
+),
+
+superheroes_mod as (
+
+select
     id AS superhero_id,
     name,
     gender,
@@ -16,4 +24,8 @@ SELECT
     skin_color,
     alignment,
     weight
-FROM {{ source('tutorial', 'superheroes') }}
+from superheroes_source
+
+)
+
+select * from superheroes_mod

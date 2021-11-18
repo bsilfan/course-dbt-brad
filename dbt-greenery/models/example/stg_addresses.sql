@@ -4,10 +4,22 @@
   )
 }}
 
-SELECT 
+with addresses_source as (
+
+select * from {{ source('tutorial', 'addresses') }}
+
+),
+
+addresses_mod as (
+
+select 
     address_id,
     address,
     zipcode,
     state,
     country
-FROM {{ source('tutorial', 'addresses') }}
+from addresses_source
+
+)
+
+select * from addresses_mod
