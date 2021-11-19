@@ -59,7 +59,8 @@ select
   date_trunc('hour', created_at), 
   count(distinct session_id) as sessions_per_hour 
 from stg_events 
-where created_at is not null group by 1
+where created_at is not null 
+group by 1
 
 )
 
