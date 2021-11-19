@@ -2,7 +2,7 @@
 
 **Answer:** 130
 ```sql
-select stg_users count(*) from stg_users
+select count(*) from stg_users
 ```
 ----------------------------------------------------------------------------------------------
 
