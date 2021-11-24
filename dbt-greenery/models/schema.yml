@@ -27,3 +27,6 @@ models:
 
   - name: stg_users
     description: Contains user information such as first name, last name, email
+
+  - name: facts_user_orders
+    description: Contains user order information such as lifetime spend, number of orders, average order value
