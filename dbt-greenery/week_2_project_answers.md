@@ -25,8 +25,9 @@ from user_orders
 **Question 2:** What are good indicators of a user who will likely purchase again?
 
 **Answer:**  If they submitted a rating on their first order, if they had any order issues (i.e.
-late delivery, defective products), if they had positive interactions with customer service,
-how often they view products/the website, how long it's been since they last logged in/purchased
+late delivery, returns, were sent defective products), if they had positive interactions 
+with customer service, how often they view products/the website, how long it's been since they 
+last logged in/purchased.
 
 ----------------------------------------------------------------------------------------------
 **Question 3:** Explain the marts models you added.  Why did you organize it the way you did?
@@ -50,6 +51,12 @@ Overall I struggled with the idea of making many dim/int tables unnecessarily si
 was very simple and the queries to produce the fact tbales were not that complex.  I definitely understood
 the reasoning of why they should be used though and have thought of some real world examples from my company
 of where they make sense.
+
+----------------------------------------------------------------------------------------------
+
+**Question 4:** DAG Screenshot
+
+
 
 ----------------------------------------------------------------------------------------------
 
