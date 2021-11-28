@@ -56,14 +56,11 @@ of where they make sense.
 
 **Question 4:** DAG Screenshot
 
-
+![image](https://user-images.githubusercontent.com/56136736/143778646-d33d6500-b50e-4ea9-85e9-b32b1086d9c3.png)
 
 ----------------------------------------------------------------------------------------------
 
 **(Part 2) Tests**
-
-![image](https://user-images.githubusercontent.com/56136736/143778646-d33d6500-b50e-4ea9-85e9-b32b1086d9c3.png)
-
 
 ----------------------------------------------------------------------------------------------
 
