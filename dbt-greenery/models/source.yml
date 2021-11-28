@@ -22,7 +22,6 @@ sources:
           - name: name
             tests:
               - not_null
-              - unique 
 
       - name: users
         loaded_at_field: created_at

@@ -1,4 +1,3 @@
-
 version: 2
 
 models:
@@ -8,7 +7,6 @@ models:
       - name: name
         tests:
           - not_null
-          - unique
 
   - name: stg_addresses
     description: Contains details for each address_id such as address and zipcode
@@ -28,5 +26,5 @@ models:
   - name: stg_users
     description: Contains user information such as first name, last name, email
 
-  - name: facts_user_orders
+  - name: fact_user_orders
     description: Contains user order information such as lifetime spend, number of orders, average order value
