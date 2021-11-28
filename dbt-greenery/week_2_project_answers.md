@@ -62,6 +62,9 @@ of where they make sense.
 
 **(Part 2) Tests**
 
+![image](https://user-images.githubusercontent.com/56136736/143778646-d33d6500-b50e-4ea9-85e9-b32b1086d9c3.png)
+
+
 ----------------------------------------------------------------------------------------------
 
 **Question 1:** What assumptions are you making about each model? (i.e. why did you add each test?)
