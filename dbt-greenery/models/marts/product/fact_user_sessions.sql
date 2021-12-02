@@ -4,14 +4,22 @@
   )
 }}
 
+{% 
+  set event_types = [
+    'account_created',
+    'page_view',
+    'add_to_cart',
+    'delete_from_cart',
+    'checkout'
+  ]
+%}
+
 select
   created_at,
   user_id,
-  session_id,
-  count(distinct case when event_type = 'account_created' then event_id end) as account_created,
-  count(distinct case when event_type = 'page_view' then event_id end) as page_view,
-  count(distinct case when event_type = 'add_to_cart' then event_id end) as add_to_cart,
-  count(distinct case when event_type = 'delete_from_cart' then event_id end) as delete_from_cart,
-  count(distinct case when event_type = 'checkout' then event_id end) as checkout
+  session_id
+  {% for event_type in event_types %}
+  , count(distinct case when event_type = '{{event_type}}' then event_id end) as {{event_type}}
+  {% endfor %}
 from {{ ref("stg_events") }}
 group by 1, 2, 3
