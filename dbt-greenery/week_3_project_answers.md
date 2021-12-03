@@ -33,7 +33,7 @@ Please see the dbt_projects.yml as well as the macro schema.  I'm not sure I did
 
 I used dbt_utils for the fact_user_sessions_dbt_utils.sql model mentioned above.
 
-I also used dbt_utils to make a dim_dates model to be used for reporting/agg models
+I also used dbt_utils to make a dim_dates model to be used for reporting/agg models such as agg_daily_orders (which I just added)
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -43,6 +43,6 @@ I also used dbt_utils to make a dim_dates model to be used for reporting/agg mod
 
 **Answer**
 
-(currently unable to run dbt docs generate / dbt docs serve, but will update when it is working)
+![image](https://user-images.githubusercontent.com/56136736/144652278-a7d1cf8e-fc45-4fec-99c0-d687e7a192fc.png)
 
 --------------------------------------------------------------------------------------------------------------------
