@@ -1,0 +1,26 @@
+version: 2
+
+exposures:
+
+  - name: Unit Economics Dashboard
+    description: >
+      Models that are critical to our unit economics dashboard
+    type: dashboard
+    maturity: high
+    owner:
+      name: Brad Silfan
+      email: brad@greenery.com
+    depends_on:
+      - ref('agg_daily_orders')
+
+  - name: Conversion Rate Dashboard
+    description: >
+      Models that are critical to our conversion rate dashboard
+    type: dashboard
+    maturity: high
+    owner:
+      name: Brad Silfan
+      email: brad@greenery.com
+    depends_on:
+      - ref('agg_conversion_rate')
+      - ref('agg_conversion_rate_by_product')

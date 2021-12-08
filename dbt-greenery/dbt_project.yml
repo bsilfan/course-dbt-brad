@@ -40,5 +40,5 @@ models:
   dbt_greenery:
     post-hook:
       - "{{ grant_select(role='reporting') }}"
-    on-run-end:
-      - "GRANT USAGE ON SCHEMA {{ schema }} TO {{ role }};"
+  on-run-end:
+     - "GRANT USAGE ON SCHEMA {{ schema }} TO {{ role }};"
